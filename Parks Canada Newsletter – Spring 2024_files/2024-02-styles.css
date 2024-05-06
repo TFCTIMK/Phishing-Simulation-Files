@@ -1,0 +1,819 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+/***
+██████  ██       ██████  ██████   █████  ██
+██       ██      ██    ██ ██   ██ ██   ██ ██
+██   ███ ██      ██    ██ ██████  ███████ ██
+██    ██ ██      ██    ██ ██   ██ ██   ██ ██
+██████  ███████  ██████  ██████  ██   ██ ███████
+*/
+
+/* --- GENERAL STYLES --- REGION --- */
+
+html {-webkit-font-smoothing: antialiased;}
+
+body {
+    color: #000000;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 0;
+    width: 100%;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #000000;
+    cursor: pointer;
+}
+/*
+a:hover {
+color: #8b412e;
+}
+*/
+a:focus, button a:focus, input:focus {
+    outline:0;
+}
+
+.image-container {
+    height: 50%;
+    line-height: 0;
+    width: 100%;
+}
+
+.image-container img {
+    height: 50%;
+    width: 100%;
+}
+
+.rwd-image {
+    height:auto;
+    width: 100%;
+}
+
+.clear { clear: both; }
+
+.left { float: left; }
+.right { float: right; }
+
+.group:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+/* --- GENERAL --- ENDREGION --- */
+
+
+
+/* --- TYPOGRAPHY --- REGION --- */
+
+h1 {
+    color: #000000;
+    font-family: "Helvetica Neue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    line-height: 1em;
+    margin: 0 0 8px -3px;
+}
+
+h2 {
+    color: #000000;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 0;
+}
+
+h3 {
+    color:#000000;
+    font-family: 'Helvetica Neue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    line-height: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+h4 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.25em;
+    line-height: 1em;
+    margin: 6px 0;
+    padding: 0;
+}
+
+h5 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    margin: 6px 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0 0 .75em 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0 0 12px 0;
+    padding: 0 0 0 1.5em;
+}
+
+li {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+sup {
+    line-height: 1em;
+}
+
+@media
+    screen and (-webkit-min-device-pixel-ratio: 1.5),
+    screen and (-moz-min-device-pixel-ratio: 1.5),
+    screen and (min-device-pixel-ratio: 1.5) {
+        body {
+            -ms-text-size-adjust: none;
+            -webkit-text-size-adjust: none;
+        }
+}
+
+/* --- TYPOGRAPHY --- ENDREGION --- */
+
+
+
+
+
+/*
+██   ██ ███████  █████  ██████  ███████ ██████
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+███████ █████   ███████ ██   ██ █████   ██████
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+██   ██ ███████ ██   ██ ██████  ███████ ██   ██
+*/
+
+/* --- HEADER --- REGION --- */
+
+.pre-header {
+    font-size: .75em;
+    margin: 0;
+    padding: 16px 0;
+}
+
+.pre-header p {
+    font-family: 'Helvetica Neue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.pre-header .subscribe {
+    display: inline-block;
+    max-width: 80%;
+}
+
+.id-zone {
+    background-color: #000000;
+    font-size: 0;
+    padding: 11px 21px 11px 22px;
+}
+
+.id-zone:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.beaver-logo {
+    border-right: 1px solid #ffffff;
+    height: 33px;
+    padding: 0 11px 0 0;
+    width: 44px;
+}
+
+.sm-id-zone {
+    float: right;
+}
+
+.applied-title {
+    height: 33px;
+    width: 118px;
+}
+
+.canada-wordmark {
+    height: 33px;
+    margin: 0 0 0 11px;
+    width: 96px;
+}
+
+.title-block {
+    background-color: #d97a33;
+    margin: 0 0 22px 0;
+    padding: 15px 22px 22px;
+}
+
+.edition {
+    color: #000000;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 1em 0 0 0;
+    padding: 0;
+    text-align: right;
+}
+
+.covid {
+    background-color: #f9f4d4;
+    border-left: 4px solid #fd860b;
+    display: block;
+    margin: 0 0 22px 0;
+    padding: 16px 22px 6px 30px;
+}
+
+.covid p:before {
+    content: url(../images/halflings-107-warning-sign.png);
+    display: inline-block;
+    margin: 0 0 0 -21px;
+    padding: 0 6px 0 0;
+}
+
+.covid p {
+    display: inline-block;
+    font-weight: bolder;
+    line-height: 1em;
+}
+
+/* --- HEADER --- ENDREGION --- */
+
+
+
+
+
+/*
+███    ███  █████  ██ ███    ██
+████  ████ ██   ██ ██ ████   ██
+██ ████ ██ ███████ ██ ██ ██  ██
+██  ██  ██ ██   ██ ██ ██  ██ ██
+██      ██ ██   ██ ██ ██   ████
+*/
+
+/* --- MAIN CONTENT --- REGION --- */
+
+.article-header {
+    background: url(../images/article-header-texture_brass.png) right center no-repeat;
+    background-color: #d97a33;
+    background-size: 600px auto;
+    padding: 16px 22px 20px;
+}
+
+.text-container {
+    background-color: #f2ece9;
+    margin: 0 0 22px 0;
+    padding: 16px 22px 12px;
+}
+
+.text-container:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.sub-article {
+    float: left;
+    margin: 12px 3.5% 0 0;
+    width: 31%;
+}
+
+.sub-article:first-of-type {
+    padding-left: 0;
+}
+
+.sub-article:last-of-type {
+    border-right: none;
+    margin-right: 0;
+}
+
+.sub-article p {
+    font-size: .875em;
+    line-height: 1.25em;
+    margin: .5em 0 .5em;
+}
+
+.spotlight {
+    border: 2px solid #1e71b8;
+    margin: 0 0 22px 0;
+}
+
+.spotlight-header {
+    background: url(../images/spotlight-header_marine.png) right center no-repeat;
+    background-color: #1e71b8;
+    background-size: 600px auto;
+    padding: 16px 20px 20px;
+}
+
+.spotlight h3 {
+    color: #ffffff;
+}
+
+.spotlight-place {
+    margin: 22px 20px 16px;
+}
+
+.spotlight-place h4 {
+    color: #1e71b8;
+    margin: 22px 0 6px;
+}
+
+.spotlight-place p {
+    font-size: 1em;
+    line-height: 1.25em;
+    margin: 0 0 16px;
+}
+
+.spotlight-articles {
+    margin: 0;
+    padding: 0 0 12px;
+}
+
+.spotlight article {
+    border-right: 1px dotted #1e71b8;
+    box-sizing: border-box;
+    display: table-cell;
+    padding: 0 20px;
+    width: 33.3333333333%;
+}
+
+.spotlight article:last-of-type {
+    border-right: none;
+}
+
+.spotlight article p {
+    font-size: .875em;
+    line-height: 1.25em;
+    margin: 0 0 .5em;
+}
+
+.spotlight-footer {
+    border-top: 1px dotted;
+    margin: 12px 20px 0;
+}
+
+.spotlight-footer:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+.spotlight-footer p {
+    color: #000000;
+    font-size: .875em;
+    margin: 0;
+    padding: 12px 0;
+}
+
+.spotlight-footer a {
+    color: #1e71b8;
+}
+
+.spotlight-footer .location {
+    float: left;
+}
+
+.spotlight-footer .directions {
+    float: right;
+}
+
+.paragraph-title {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.checklist {
+    padding-left: 22px;
+}
+
+.checklist li {
+    list-style: none;
+}
+
+
+.checklist li:before {
+    background-image:url(../images/checkmark.png);
+    background-size: 100% 100%;
+    content: "";
+    display: inline-block;
+    height: 12px;
+    margin: 0 6px 0 -22px;
+    width: 16px;
+}
+
+.in-collaboration {
+	display: inline-block;
+	float: left;
+	font-size:.75em;
+}
+
+.in-collaboration img {
+	padding: 8px;
+	vertical-align: middle;
+}
+
+.caption-credit {
+    display: inline-block;
+    float: right;
+    font-size: .75em;
+    margin: 0em 0 .5em 0;
+}
+
+.button {
+    margin: 1.5em 0 1.5em 0;
+}
+
+.button a {
+    background-color: #1e71b8;
+    border-bottom: 1px solid black;
+    border-radius: 6px;
+    color: #ffffff;
+    margin: 0;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button a:hover {
+    background-color: #245986;
+    color: #ffffff;
+}
+
+/* --- MAIN CONTENT --- ENDREGION --- */
+
+
+
+
+
+/*
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+*/
+
+/* --- FOOTER --- REGION --- */
+
+.pre-footer {
+    background-color: #d97a33;
+    margin: 0 0 12px 0;
+}
+
+.pre-footer ul {
+    list-style: none;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.pre-footer li {
+    box-sizing: border-box;
+    border-right: 2px solid #ffffff;
+    display: table-cell;
+    font-size: .75em;
+    font-weight: bold;
+    line-height: 1em;
+    margin: 0;
+    padding: 6px 2%;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.pre-footer a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.pre-footer br {
+    display: none;
+}
+
+.pre-footer li:nth-child(5) {
+    border-right: none;
+}
+
+footer {
+    background-color: #000000;
+    color: #cccccc;
+    margin: 0;
+    padding: 18px 22px 8px;
+}
+
+footer p {
+    color:#cccccc;
+    font-family: "Helvetica Neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: .75em;
+    font-weight: normal;
+    line-height: 1.25em;
+    margin-bottom: 1em;
+}
+
+footer a {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+.social-media {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 4px 5% 0 0;
+    width: 50%;
+}
+
+.social-media p {
+    color: #d97a33;
+    font-weight: bold;
+}
+
+.social-media a {
+    color: #d97a33;
+}
+.facebook-logo, .twitter-logo, .youtube-logo, .instagram-logo {
+    display: inline-table;
+    line-height: 0;
+    margin: 0 12px 16px 0;
+    vertical-align: middle;
+}
+
+.footer-contact {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    padding: 6px 0 0 0;
+    width: 50%;
+}
+
+.mobile-app {
+    height: 20px;
+    margin: 0;
+    padding: 0 10px 0 0;
+    vertical-align: middle;
+}
+
+.trophy {
+    float: left;
+    height: 20px;
+    margin: -3px 0 0 -5px;
+    padding: 0 6px 0 0;
+    vertical-align: middle;
+}
+
+.camera-icon {
+    height: 10px;
+    margin: 0 0 -1px 8px;
+}
+
+.pc-apps {
+    margin: 0;
+}
+
+.pc-apps img {
+    margin: 10px 10px 0 0;
+    max-width: 135px;
+}
+
+.pc-apps img:nth-child(n+2) {
+    margin-right: 0;
+}
+
+.footer-links .legal p {
+    font-size: .5em;
+    margin: 16px 0 0 0;
+} /* Specificty required to override “.footer-links p: font-size” above */
+
+
+/* --- FOOTER --- ENDREGION --- */
+
+
+
+
+
+/*
+██████  ██     ██ ██████
+██   ██ ██     ██ ██   ██
+██████  ██  █  ██ ██   ██
+██   ██ ██ ███ ██ ██   ██
+██   ██  ███ ███  ██████
+*/
+
+/* --- MEDIA QUERIES --- REGION --- */
+
+@media (max-width: 622px) {
+    .pre-header {
+        font-size: .75em;
+        margin: 0;
+        padding: 16px 22px;
+    }
+}
+
+@media  (max-width: 599px) {
+    .edition {
+        margin-top: 18px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 567px) {
+
+    h1 {
+        margin-top: 0;
+    }
+
+    p, article li {
+        font-size: 1.125em;
+    }
+    
+    .sub-article {
+        clear: both;
+        display: block;
+        margin: .75em 0;
+        width: 100%;
+    }
+
+    .sub-article p {
+        font-size: 1.125em;
+    }
+
+    .spotlight {
+        margin: 0 12px 22px;
+    }
+    
+    .spotlight-place {
+        margin: 22px 20px 22px;
+    }
+
+    .spotlight-place h4 {
+        font-size: 1.5em;
+        line-height: 1.125em;
+    }
+
+    .spotlight-place p {
+        font-size: 1.375em;
+        margin: 0 0 1em;
+    }
+
+    .spotlight article {
+        border: none;
+        display: block;
+        padding: 0 22px 22px;
+        width: 100%;
+    }
+    
+    .spotlight article h5 {
+        font-size: 1.375em
+    }
+
+    .spotlight article p {
+        font-size: 1.125em;
+        line-height: 1.5em;
+        margin: 0 0 .75em;
+    }
+
+    .pre-footer ul {
+        padding: 0;
+    }
+
+    .pre-footer:after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    .pre-footer li {
+        border-bottom: 2px solid #ffffff;
+        float: left;
+        margin: 0;
+        padding: 11px;
+        width: 50%;
+    }
+
+    .pre-footer li:nth-child(2), .pre-footer li:nth-child(4) {
+        border-right: 0;
+    }
+
+    .pre-footer li:nth-child(5) {
+        border-bottom: 0;
+        width: 100%;
+    }
+
+    .footer-links {
+        float: none;
+        padding: 22px 22px 1px;
+        width: 100%;
+    }
+
+    .footer-links li {
+        border: none;
+        display: block;
+        margin: 0 0 11px 0;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+    }
+
+    .social-media, .social-media-B {
+        display: block;
+        padding: 4px 0 0 0;
+        width: 100%;
+    }
+
+    .footer-contact, .footer-contact-B {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        display: block;
+        padding: 6px 0 0 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 479px) {
+    
+    
+    .applied-title {
+        display: none;
+    }
+    
+    .beaver-logo {
+        border: none;
+        padding: 0;
+    }
+
+    .sm-id-zone {
+        float: none;
+    }
+
+    .canada-wordmark {
+        float: right;
+    }
+    
+    .spotlight-footer .location {
+        float: none;
+        padding: 12px 0 0 0;
+    }
+
+    .spotlight-footer .directions {
+        float: none;
+        padding: 0 0 12px 20px;
+    }
+}
+
+@media (max-width: 419px) {
+    
+    .pre-footer li {
+        border-right: 0;
+        clear: both;
+        font-size: .875em;
+        padding: 12px 22px;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+@media (max-width: 399px) {
+    h1 {
+        font-size: 2.5em
+    }
+}
+
+/* --- MEDIA QUERIES --- ENDREGION --- */
