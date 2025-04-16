@@ -1,0 +1,64 @@
+/* line 1, app/assets/stylesheets/landing-watermark.scss */
+.watermark {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: sideways;
+}
+
+/* line 4, app/assets/stylesheets/landing-watermark.scss */
+.watermark.left {
+  left: 0;
+}
+
+/* line 7, app/assets/stylesheets/landing-watermark.scss */
+.watermark.right {
+  right: 0;
+}
+
+/* line 10, app/assets/stylesheets/landing-watermark.scss */
+.watermark.top {
+  text-align: center;
+  -webkit-writing-mode: horizontal-tb;
+      -ms-writing-mode: lr-tb;
+          writing-mode: horizontal-tb;
+  top: -38px;
+}
+
+/* line 15, app/assets/stylesheets/landing-watermark.scss */
+.watermark h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 15px;
+  color: #fdfdfa;
+  font-weight: bold;
+}
+
+/* line 24, app/assets/stylesheets/landing-watermark.scss */
+#template_sei .watermark.left {
+  margin-left: -10px;
+}
+
+/* line 27, app/assets/stylesheets/landing-watermark.scss */
+#template_sei .watermark.right {
+  margin-right: -10px;
+}
+
+/* line 30, app/assets/stylesheets/landing-watermark.scss */
+#template_sei .watermark.top {
+  margin-top: -10px;
+}
+
+/* line 35, app/assets/stylesheets/landing-watermark.scss */
+p.visible-watermark {
+  margin: 0;
+}
+
+/* line 39, app/assets/stylesheets/landing-watermark.scss */
+.modal-body {
+  min-height: 150px;
+  padding: 0 15px 0 15px;
+  display: flex;
+}
